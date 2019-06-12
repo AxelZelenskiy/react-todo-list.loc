@@ -1,0 +1,14 @@
+.my-list {
+    display: flex;
+    align-items: flex-end;
+
+}
+.my-list .text-span {
+    flex-grow: 1;
+    align-self: center;
+}
+.my-list .some-button {
+    font-size: 1.1rem;
+    padding: 0.6rem;
+    margin-right: 5px;
+}

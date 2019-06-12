@@ -1,0 +1,10 @@
+.App-header {
+    align-items: flex-end;
+}
+.App-header h1 {
+    flex-grow: 1;
+}
+.App-header h2 {
+    font-size: .75rem;
+    color: grey;
+}
