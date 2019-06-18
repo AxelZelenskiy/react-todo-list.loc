@@ -1,0 +1,12 @@
+.add-something {
+    margin-top: 5px;
+    justify-items: end;
+}
+.add-something  input {
+    flex-grow: 1;
+    width: auto;
+    margin-right: 5px;
+}
+.add-something button {
+    width: 18rem;
+}

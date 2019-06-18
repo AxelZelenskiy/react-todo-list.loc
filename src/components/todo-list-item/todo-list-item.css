@@ -6,9 +6,17 @@
 .my-list .text-span {
     flex-grow: 1;
     align-self: center;
+    cursor:pointer;
+}
+.my-list .mega-done{
+    text-decoration: line-through;
 }
 .my-list .some-button {
     font-size: 1.1rem;
-    padding: 0.6rem;
     margin-right: 5px;
+    min-width: 2.4rem;
+}
+.my-list .text-important {
+    color: midnightblue;
+    font-weight: bold;
 }
