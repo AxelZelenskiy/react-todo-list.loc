@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './search-field.css';
 
-const SearchField = () =>{
-    return <input type="text" className="form-control search-input" placeholder="Search something" />
-};
+export default class SearchField extends Component {
+    state = {
+      inputValue : ''
+    };
+    valueUpdate = (e) => {
+        this.setState( { inputValue: e.target.value },() => {
+            this.props.searchThis(this.state.inputValue);
+        });
 
-export default SearchField;
+    };
+    render(){
+        return <input type="text" className="form-control search-input" placeholder="Search something"
+                      onChange={this.valueUpdate}
+                      value={this.state.inputValue}  />;
+    }
+}
